@@ -7,14 +7,39 @@
 //
 
 import UIKit
+import CoreBluetooth
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-
+  
+  var viewModel: ViewModel!
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    // Do any additional setup after loading the view, typically from a nib.
+  }
+  
 }
 
+class Router {
+  static func transitionToViewController() {
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    let bluetoothManager = BluetoothManager(centralManager: appDelegate.centralManager)
+    let viewController = ViewController()
+    
+    viewController.viewModel = ViewModel(bluetoothManager: bluetoothManager)
+  }
+}
+
+class ViewModel {
+  let bluetoothManager: BluetoothManager
+  
+  init(bluetoothManager: BluetoothManager) {
+    self.bluetoothManager = bluetoothManager
+  }
+}
+
+struct BluetoothManager {
+  init(centralManager: CBCentralManager) {
+    
+  }
+}

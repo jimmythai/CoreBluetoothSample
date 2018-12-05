@@ -12,6 +12,7 @@
 		0F1E978021B79337001FFD7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F1E977E21B79337001FFD7D /* Main.storyboard */; };
 		0F1E978221B79338001FFD7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F1E978121B79338001FFD7D /* Assets.xcassets */; };
 		0F1E978521B79338001FFD7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F1E978321B79338001FFD7D /* LaunchScreen.storyboard */; };
+		0F1E978D21B7942E001FFD7D /* AppDelegate+CoreBluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1E978C21B7942E001FFD7D /* AppDelegate+CoreBluetooth.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		0F1E978121B79338001FFD7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F1E978421B79338001FFD7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F1E978621B79338001FFD7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F1E978C21B7942E001FFD7D /* AppDelegate+CoreBluetooth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+CoreBluetooth.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				0F1E977A21B79337001FFD7D /* AppDelegate.swift */,
+				0F1E978C21B7942E001FFD7D /* AppDelegate+CoreBluetooth.swift */,
 				0F1E977C21B79337001FFD7D /* ViewController.swift */,
 				0F1E977E21B79337001FFD7D /* Main.storyboard */,
 				0F1E978121B79338001FFD7D /* Assets.xcassets */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F1E978D21B7942E001FFD7D /* AppDelegate+CoreBluetooth.swift in Sources */,
 				0F1E977D21B79337001FFD7D /* ViewController.swift in Sources */,
 				0F1E977B21B79337001FFD7D /* AppDelegate.swift in Sources */,
 			);
@@ -283,7 +287,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z8B9M32833;
+				DEVELOPMENT_TEAM = 95243PKS2N;
 				INFOPLIST_FILE = CoreBluetoothSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,7 +305,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z8B9M32833;
+				DEVELOPMENT_TEAM = 95243PKS2N;
 				INFOPLIST_FILE = CoreBluetoothSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
